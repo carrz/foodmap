@@ -1,0 +1,71 @@
+$(function(){
+   setTimeout(function() {
+      $('#splash').fadeOut(500);
+   }, 2000);
+});
+
+$(document).ready(function(){
+	$('.modal').modal();
+});
+
+$('#china').hide();
+$('#chilena').hide();
+$('#sushi').hide();
+$('#mexicana').hide();
+$('#hindu').hide();
+$('#arabe').hide();
+
+$('#food-rpc').click(function(){
+	$('#china').show();
+	$('#food').hide();
+	$('#chilena').hide();
+	$('#sushi').hide();
+	$('#mexicana').hide();
+	$('#hindu').hide();
+	$('#arabe').hide();
+})
+$('#food-cl').click(function(){
+	$('#chilena').show();
+	$('#food').hide();
+	$('#china').hide();
+	$('#sushi').hide();
+	$('#mexicana').hide();
+	$('#hindu').hide();
+	$('#arabe').hide();
+})
+$('#food-jp').click(function(){
+	$('#sushi').show();
+	$('#food').hide();
+	$('#chilena').hide();
+	$('#china').hide();
+	$('#mexicana').hide();
+	$('#hindu').hide();
+	$('#arabe').hide();
+})
+$('#food-in').click(function(){
+	$('#hindu').show();
+	$('#food').hide();
+	$('#chilena').hide();
+	$('#sushi').hide();
+	$('#mexicana').hide();
+	$('#china').hide();
+	$('#arabe').hide();
+})
+$('#food-ar').click(function(){
+	$('#arabe').show();
+	$('#food').hide();
+	$('#chilena').hide();
+	$('#sushi').hide();
+	$('#mexicana').hide();
+	$('#hindu').hide();
+	$('#china').hide();
+})
+$('#food-mx').click(function(){
+	$('#mexicana').show();
+	$('#food').hide();
+	$('#chilena').hide();
+	$('#sushi').hide();
+	$('#china').hide();
+	$('#hindu').hide();
+	$('#arabe').hide();
+})

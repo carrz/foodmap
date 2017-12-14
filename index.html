@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="utf-8">
+	<title>Foodmap</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body>
+	<div id="splash">
+    <div class="row">
+      <div class="col s-12">
+        <h1>Foodmap</h1>
+      </div>
+    </div> 
+  </div>
+  <header>
+    <nav>
+      <div class="nav-wrapper black nav">
+        <a href="#" class="brand-logo center orange-text lighten-1 title">Foodmap</a>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="row">
+      <div class="col s12 map">
+        <iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe>
+      </div>
+      <div class="col s12 list">
+        <ul id="dropdown2" class="dropdown-content orange lighten-1">
+          <li><a class="white-text" id="food-rpc" href="#!">Comida china</a></li>
+          <li><a class="white-text" id="food-jp" href="#!">Sushi</a></li>
+          <li><a class="white-text" id="food-cl" href="#!">Comida chilena</a></li>
+          <li><a class="white-text" id="food-mx" href="#!">Comida mexicana</a></li>
+          <li><a class="white-text" id="food-ar" href="#!">Comida árabe</a></li>
+          <li><a class="white-text" id="food-in" href="#!">Comida hindú</a></li>
+        </ul>
+        <a class="btn dropdown-button orange lighten-1" href="#!" data-activates="dropdown2">¿Qué se te apetece comer hoy?<i class="material-icons right">arrow_drop_down</i></a>
+      </div>
+    </div>
+    <div class="row" id="food">
+      <div class="col s12 pic">
+        <img src="assets/img/china/download (5).jpeg">
+        <img src="assets/img/sushi/download (6).jpeg">
+        <img src="assets/img/mexicana/download (1).jpeg">
+      </div>
+      <div class="col s12 pic">
+        <img src="assets/img/chilena/download (5).jpeg">
+        <img src="assets/img/hindu/download.jpeg">
+        <img src="assets/img/arabe/download (2).jpeg">
+      </div>
+    </div>
+    <div class="row" id="china">
+      <div class="col s12 orange-text lighten-1">
+        <h5>Comida china</h5>
+      </div>
+          <!-- Pinche Modal -->
+        <div id="modal1" class="modal orange lighten-1">
+          <div class="row  white-text modal-class">
+            <div class="col s12 center padding-modal">
+              <h5>Los chinitos</h5>
+            </div>
+            <div class="col s12 padding-modal">
+              <iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Av. Calle sensual #3987</p>
+              <p>Lunes a Sábado de 13:00 a 21:00</p>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Desde $2000 por persona</p>
+              <p>Servicio a domicilio</p>
+            </div>
+            <div class="col s12 center padding-modal">
+              <a class="waves-effect white waves-light btn orange-text lighten-1">Pedir</a>
+            </div>
+          </div>
+        </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal1"> <img src="assets/img/china/download (4).jpeg"></a>
+        <a class="modal-trigger" href="#modal1"> <img src="assets/img/china/images.jpeg"></a>
+        <a class="modal-trigger" href="#modal1"> <img src="assets/img/china/download (3).jpeg"></a>
+      </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal1"> <img src="assets/img/china/download (2).jpeg"></a>
+        <a class="modal-trigger" href="#modal1"> <img src="assets/img/china/download (1).jpeg"></a>
+        <a class="modal-trigger" href="#modal1"> <img src="assets/img/china/download.jpeg"></a>
+      </div>
+    </div>
+    <div class="row" id="chilena">
+      <div class="col s12 orange-text lighten-1">
+        <h5>Comida chilena</h5>
+      </div>
+      <!-- Pinche Modal -->
+        <div id="modal2" class="modal orange lighten-1">
+          <div class="row  white-text modal-class">
+            <div class="col s12 center padding-modal">
+              <h5>Los chilenitos</h5>
+            </div>
+            <div class="col s12 padding-modal">
+              <iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Av. Calle sensual #3987</p>
+              <p>Lunes a Sábado de 13:00 a 21:00</p>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Desde $2000 por persona</p>
+              <p>Servicio a domicilio</p>
+            </div>
+            <div class="col s12 center padding-modal">
+              <a class="waves-effect white waves-light btn orange-text lighten-1">Pedir</a>
+            </div>
+          </div>
+        </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal2"> <img src="assets/img/chilena/images.jpeg"></a>
+        <a class="modal-trigger" href="#modal2"> <img src="assets/img/chilena/images (1).jpeg"></a>
+        <a class="modal-trigger" href="#modal2"> <img src="assets/img/chilena/download (3).jpeg"></a>
+      </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal2"> <img src="assets/img/chilena/download (2).jpeg"></a>
+        <a class="modal-trigger" href="#modal2"> <img src="assets/img/chilena/download (1).jpeg"></a>
+        <a class="modal-trigger" href="#modal2"> <img src="assets/img/chilena/download.jpeg"></a> 
+      </div>
+    </div>
+    <div class="row" id="sushi">
+      <div class="col s12 orange-text lighten-1">
+        <h5>Sushi</h5>
+      </div>
+      <!-- Pinche Modal -->
+        <div id="modal3" class="modal orange lighten-1">
+          <div class="row  white-text modal-class">
+            <div class="col s12 center padding-modal">
+              <h5>Los japos</h5>
+            </div>
+            <div class="col s12 padding-modal">
+              <iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Av. Calle sensual #3987</p>
+              <p>Lunes a Sábado de 13:00 a 21:00</p>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Desde $2000 por persona</p>
+              <p>Servicio a domicilio</p>
+            </div>
+            <div class="col s12 center padding-modal">
+              <a class="waves-effect white waves-light btn orange-text lighten-1">Pedir</a>
+            </div>
+          </div>
+        </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal3"> <img src="assets/img/sushi/download (4).jpeg"></a> 
+        <a class="modal-trigger" href="#modal3"> <img src="assets/img/sushi/images.jpeg"></a> 
+        <a class="modal-trigger" href="#modal3"> <img src="assets/img/sushi/download (3).jpeg"></a> 
+      </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal3"> <img src="assets/img/sushi/download (2).jpeg"></a>
+        <a class="modal-trigger" href="#modal3"> <img src="assets/img/sushi/download (1).jpeg"></a>
+        <a class="modal-trigger" href="#modal3"> <img src="assets/img/sushi/download.jpeg"></a>
+      </div>
+    </div>
+    <div class="row" id="mexicana">
+      <div class="col s12 orange-text lighten-1">
+        <h5>Comida mexicana</h5>
+      </div>
+      <!-- Pinche Modal -->
+        <div id="modal4" class="modal orange lighten-1">
+          <div class="row  white-text modal-class">
+            <div class="col s12 center padding-modal">
+              <h5>Los cuates</h5>
+            </div>
+            <div class="col s12 padding-modal">
+              <iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Av. Calle sensual #3987</p>
+              <p>Lunes a Sábado de 13:00 a 21:00</p>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Desde $2000 por persona</p>
+              <p>Servicio a domicilio</p>
+            </div>
+            <div class="col s12 center padding-modal">
+              <a class="waves-effect white waves-light btn orange-text lighten-1">Pedir</a>
+            </div>
+          </div>
+        </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal4"> <img src="assets/img/mexicana/images (2).jpeg"></a>
+        <a class="modal-trigger" href="#modal4"> <img src="assets/img/mexicana/download (4).jpeg"></a>
+        <a class="modal-trigger" href="#modal4"> <img src="assets/img/mexicana/images.jpeg"></a>
+      </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal4"> <img src="assets/img/mexicana/images (1).jpeg"></a>
+        <a class="modal-trigger" href="#modal4"> <img src="assets/img/mexicana/images (3).jpeg"></a>
+        <a class="modal-trigger" href="#modal4"> <img src="assets/img/mexicana/download.jpeg"></a>
+      </div>
+    </div>
+    <div class="row" id="arabe">
+      <div class="col s12 orange-text lighten-1">
+        <h5>Comida arabe</h5>
+      </div>
+      <!-- Pinche Modal -->
+        <div id="modal5" class="modal orange lighten-1">
+          <div class="row  white-text modal-class">
+            <div class="col s12 center padding-modal">
+              <h5>Los moros</h5>
+            </div>
+            <div class="col s12 padding-modal">
+              <iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Av. Calle sensual #3987</p>
+              <p>Lunes a Sábado de 13:00 a 21:00</p>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Desde $2000 por persona</p>
+              <p>Servicio a domicilio</p>
+            </div>
+            <div class="col s12 center padding-modal">
+              <a class="waves-effect white waves-light btn orange-text lighten-1">Pedir</a>
+            </div>
+          </div>
+        </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal5"> <img src="assets/img/arabe/download (4).jpeg"></a>
+        <a class="modal-trigger" href="#modal5"> <img src="assets/img/arabe/images.jpeg"></a>
+        <a class="modal-trigger" href="#modal5"> <img src="assets/img/arabe/download (3).jpeg"></a>
+      </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal5"> <img src="assets/img/arabe/download (5).jpeg"></a>
+        <a class="modal-trigger" href="#modal5"> <img src="assets/img/arabe/download (1).jpeg"></a>
+        <a class="modal-trigger" href="#modal5"> <img src="assets/img/arabe/download.jpeg"></a>
+      </div>
+    </div>
+    <div class="row" id="hindu">
+      <div class="col s12 orange-text lighten-1">
+        <h5>Comida hindu</h5>
+      </div>
+      <!-- Pinche Modal -->
+        <div id="modal6" class="modal orange lighten-1">
+          <div class="row  white-text modal-class">
+            <div class="col s12 center padding-modal">
+              <h5>Los apu</h5>
+            </div>
+            <div class="col s12 padding-modal">
+              <iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Av. Calle sensual #3987</p>
+              <p>Lunes a Sábado de 13:00 a 21:00</p>
+            </div>
+            <div class="col s6 center padding-modal">
+              <p>Desde $2000 por persona</p>
+              <p>Servicio a domicilio</p>
+            </div>
+            <div class="col s12 center padding-modal">
+              <a class="waves-effect white waves-light btn orange-text lighten-1">Pedir</a>
+            </div>
+          </div>
+        </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal6"> <img src="assets/img/hindu/images (2).jpeg"></a>
+        <a class="modal-trigger" href="#modal6"> <img src="assets/img/hindu/images.jpeg"></a>
+        <a class="modal-trigger" href="#modal6"> <img src="assets/img/hindu/images (1).jpeg"></a>
+      </div>
+      <div class="col s12 pic">
+        <a class="modal-trigger" href="#modal6"> <img src="assets/img/hindu/download (3).jpeg"></a>
+        <a class="modal-trigger" href="#modal6"> <img src="assets/img/hindu/download (2).jpeg"></a>
+        <a class="modal-trigger" href="#modal6"> <img src="assets/img/hindu/download (1).jpeg"></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-copyright orange lighten-1">
+      <div class="container white-text">
+      © 2017 Foodmap.Inc
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

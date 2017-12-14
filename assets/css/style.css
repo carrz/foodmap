@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #000;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#splash{
+	height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.nav{
+  padding: 2em 1em !important;
+}
+h1{
+  color: #ffa721;
+}
+.map{
+  padding: 3em 1em !important;
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food{
+  padding-top: 3em !important;
+}
+.title{
+  font-size: 2.9rem !important;
+}
+img{
+  width: 131px;
+  height: 131px;
+  object-fit: cover;
+  padding-right: 3px;
+}
+.pic{
+  padding: 0 .75rem 0 .95rem !important;
+}
+footer{
+  flex: 1 0 auto;
+  height: 21px !important;
+}
+.padding-modal{
+  padding: 10px !important;
+}
